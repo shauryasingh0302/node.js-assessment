@@ -13,7 +13,7 @@ app.use("/api", schoolRoutes);
 
 const PORT = process.env.PORT || 5000;
 
-const pool = require("./src/config/db");
+const pool = require("./config/config.db");
 
 async function createTable() {
   await pool.execute(`
