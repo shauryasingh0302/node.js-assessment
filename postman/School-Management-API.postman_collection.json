@@ -1,0 +1,76 @@
+{
+  "info": {
+    "_postman_id": "6688ed1a-170a-443a-b89e-5e2d5190ca64",
+    "name": "School Management API - Shaurya Singh",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48472151"
+  },
+  "item": [
+    {
+      "name": "Add School",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Modern School\",\r\n  \"address\": \"New Delhi\",\r\n  \"latitude\": 28.6289,\r\n  \"longitude\": 77.2065\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://node-js-assessment-c9gr.onrender.com/api/addSchool",
+          "protocol": "https",
+          "host": [
+            "node-js-assessment-c9gr",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Schools By Proximity",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://node-js-assessment-c9gr.onrender.com/api/listSchools?latitude=28.67&longitude=77.45",
+          "protocol": "https",
+          "host": [
+            "node-js-assessment-c9gr",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "28.67"
+            },
+            {
+              "key": "longitude",
+              "value": "77.45"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
